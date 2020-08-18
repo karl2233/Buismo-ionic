@@ -26,6 +26,7 @@ export class EditOfferPage implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
+    console.log("23232");
     this.route.paramMap.subscribe(paramMap => {
       if (!paramMap.has('placeId')) {
         this.navCtrl.navigateBack('/places/tabs/offers');
