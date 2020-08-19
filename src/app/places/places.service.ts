@@ -169,7 +169,7 @@ export class PlacesService {
         if (!places || places.length <= 0) {
           return this.fetchPlaces();
         } else {
-          return of(places);
+          return of(places); //karl this return observable
         }
       }),
       switchMap(places => {
